@@ -20,7 +20,6 @@ public class Exercice5 {
             traiterChoix(choix);
 
             if (choix != 0) {
-                System.out.println("\nAppuyez sur Entrée pour continuer...");
                 Utilitaires.attendreEntree();
             }
             continuer = (choix != 0);
