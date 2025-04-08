@@ -1,4 +1,5 @@
 
+import fiche1.src.MenuFiche1;
 import fiche2.src.MenuFiche2;
 import utils.Utilitaires;
 
@@ -33,7 +34,7 @@ public class Menu {
 
             switch (choix) {
                 case 1:
-                    // TODO: implement fiche1 menu
+                    MenuFiche1.afficherEtTraiter();
                     break;
                 case 2:
                     MenuFiche2.afficherEtTraiter();
@@ -57,7 +58,7 @@ public class Menu {
 
         while (continuer) {
             System.out.println("\n╔════════════════════════════════╗");
-            System.out.println("║         MENU PRINCIPAL         ║");
+            System.out.println("║         MENU PRINCIPAL          ║");
             System.out.println("╠════════════════════════════════╣");
             System.out.println("║  1. Fiche 1                    ║");
             System.out.println("║  2. Fiche 2                    ║");
@@ -69,7 +70,7 @@ public class Menu {
 
             switch (choix) {
                 case 1:
-                    // TODO: implement fiche1 menu
+                    MenuFiche1.afficherMenuTestsStatiques();
                     break;
                 case 2:
                     MenuFiche2.afficherMenuTestsStatiques();

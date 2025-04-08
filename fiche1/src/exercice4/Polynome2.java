@@ -1,8 +1,9 @@
 //package fiche1.src.exercice4;
 
 public class Polynome2 extends Polynome {
-    int a,b,c;
-    public Polynome2(int c, int b, int a){
+    int a, b, c;
+
+    public Polynome2(int c, int b, int a) {
         super(b, c, a);
         this.c = c;
         this.b = b;

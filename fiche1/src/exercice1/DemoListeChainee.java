@@ -4,17 +4,16 @@ import java.util.Scanner;
 
 /**
  * Classe de démonstration pour l'exercice 1
- * @author v0
  */
 public class DemoListeChainee {
     private static Scanner scanner = new Scanner(System.in);
-    
+
     public static void main(String[] args) {
         ListeChainee liste = new ListeChainee();
         boolean continuer = true;
-        
+
         System.out.println("===== Exercice 1: Listes chaînées et chaînes de caractères =====");
-        
+
         while (continuer) {
             System.out.println("\nMenu:");
             System.out.println("1. Ajouter un mot au début");
@@ -25,9 +24,9 @@ public class DemoListeChainee {
             System.out.println("6. Afficher toute la liste");
             System.out.println("0. Retour au menu de la fiche 1");
             System.out.print("Votre choix : ");
-            
+
             int choix = lireEntier();
-            
+
             switch (choix) {
                 case 1:
                     System.out.print("Entrez le mot à ajouter au début : ");
@@ -67,15 +66,16 @@ public class DemoListeChainee {
             }
         }
     }
-    
+
     /**
      * Lit un entier depuis l'entrée standard avec gestion des erreurs
+     * 
      * @return l'entier saisi
      */
     private static int lireEntier() {
         int valeur = 0;
         boolean valide = false;
-        
+
         while (!valide) {
             try {
                 valeur = Integer.parseInt(scanner.nextLine().trim());
@@ -84,8 +84,7 @@ public class DemoListeChainee {
                 System.out.print("Entrée invalide. Veuillez saisir un nombre : ");
             }
         }
-        
+
         return valeur;
     }
 }
-
