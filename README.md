@@ -1,6 +1,6 @@
 # Algorithmique et Programmation Avancées
 
-> Implémentations des exercices des fiches 1 et 2 du cours d'Algorithmique et Programmation Avancées pour la classe DIC2 de l'ESP/UCAD.
+> Implémentations des exercices des fiches 1(A2) et 2(A3) du cours d'Algorithmique et Programmation Avancées pour la classe DIC2 de l'ESP/UCAD.
 
 ## 📑 Table des matières
 
