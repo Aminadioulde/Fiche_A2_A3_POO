@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 import fiche2.src.MenuFiche2;
 import utils.Utilitaires;
 
@@ -6,13 +6,11 @@ import utils.Utilitaires;
  * Menu principal permettant de choisir entre les différentes fiches d'exercices
  */
 public class Menu {
-    private Scanner scanner;
 
     /**
      * Constructeur par défaut
      */
     public Menu() {
-        this.scanner = new Scanner(System.in);
     }
 
     /**
