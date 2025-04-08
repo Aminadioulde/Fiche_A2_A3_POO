@@ -1,0 +1,12 @@
+# Documentation directory
+doc/
+
+# All bin directories
+**/bin/
+
+# Manifest file
+manifest.txt
+
+# JAR file
+projet.jar
+
