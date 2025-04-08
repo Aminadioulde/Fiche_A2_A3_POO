@@ -1,10 +1,10 @@
-package fiche1;
+package fiche1.src;
 
 import java.util.Scanner;
-import fiche1.exercice1.DemoListeChainee;
-import fiche1.exercice2.DemoListeChaineeDouble;
-import fiche1.exercice3.DemoListeEntiers;
-import fiche1.exercice4.DemoPolynome;
+import fiche1.src.exercice1.DemoListeChainee;
+import fiche1.src.exercice3.GrandInt;
+import fiche1.src.exercice4.Polynome;
+//import fiche2.src.exercice1.ListeChainee;
 
 /**
  * Menu pour la fiche 1
@@ -28,10 +28,10 @@ public class Menu {
 
         while (continuer) {
             System.out.println("\n===== FICHE 1 =====");
-            System.out.println("1. Exercice 1 - Listes chaînées et chaînes de caractères");
-            System.out.println("2. Exercice 2 - Listes chaînées bidirectionnelles");
-            System.out.println("3. Exercice 3 - Traitement de listes chaînées");
-            System.out.println("4. Exercice 4 - Dérivée d'un polynôme");
+            System.out.println("1. Exercice 1 - Liste chaines");
+            System.out.println("2. Exercice 3 - Grands Entiers");
+            System.out.println("3. Exercice 4 - Representation et Manipulation de Polynomes");
+            System.out.println("4. Exercice 5 - Intervalles d'entiers");
             System.out.println("0. Retour au menu principal");
             System.out.print("Votre choix : ");
 
@@ -42,14 +42,14 @@ public class Menu {
                     DemoListeChainee.main(null);
                     break;
                 case 2:
-                    DemoListeChaineeDouble.main(null);
+                    GrandInt.main(null);
                     break;
                 case 3:
-                    DemoListeEntiers.main(null);
+                    Polynome.main(null);
                     break;
-                case 4:
-                    DemoPolynome.main(null);
-                    break;
+                //case 4:
+                    //.main(null;
+                    //break;
                 case 0:
                     continuer = false;
                     break;
@@ -71,9 +71,9 @@ public class Menu {
         System.out.println();
         System.out.println("Cette fiche contient les exercices suivants :");
         System.out.println("- Exercice 1 : Listes chaînées et chaînes de caractères");
-        System.out.println("- Exercice 2 : Listes chaînées bidirectionnelles");
-        System.out.println("- Exercice 3 : Traitement de listes chaînées");
-        System.out.println("- Exercice 4 : Dérivée d'un polynôme");
+        System.out.println("- Exercice 3 : Listes chaînées bidirectionnelles");
+        System.out.println("- Exercice 4: Traitement de listes chaînées");
+        System.out.println("- Exercice 5 : Dérivée d'un polynôme");
         System.out.println();
     }
 
