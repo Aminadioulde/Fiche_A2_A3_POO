@@ -1,4 +1,5 @@
 package fiche1.src.exercice4;
+
 import java.util.*;
 
 public class Polynome {
@@ -21,11 +22,12 @@ public class Polynome {
 
         return new Polynome(nouveauCoeff.toArray(new Integer[0]));
     }
-    
-    //2x^2 + 3x + 4 est représenté par [4,3,2]
+
+    // 2x^2 + 3x + 4 est représenté par [4,3,2]
 
     public static Polynome derivee(Polynome p) {
-        if (p.coefficients.size() <= 1) return new Polynome(0);
+        if (p.coefficients.size() <= 1)
+            return new Polynome(0);
         List<Integer> deriveeCoeff = new ArrayList<>();
 
         for (int i = 1; i < p.coefficients.size(); i++) {
@@ -49,15 +51,15 @@ public class Polynome {
         for (int i = coefficients.size() - 1; i >= 0; i--) {
             int coef = coefficients.get(i);
             if (coef != 0) {
-                if (!sb.isEmpty()) sb.append(" + ");
-                sb.append(coef).append(i > 0 ? "x^" + i : "");
+                if (!sb.isEmpty())
+                    sb.append(coef > 0 ? " + " : " - ");
+                sb.append(coef > 0 ? coef : -coef).append(i > 0 ? "x^" + i : "");
             }
         }
         return sb.toString();
     }
 
     public static void main(String[] args) {
-
 
         List<Integer> facteurs = new ArrayList<>();
         Scanner scan = new Scanner(System.in);

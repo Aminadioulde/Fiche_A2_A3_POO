@@ -1,4 +1,4 @@
-//package fiche1.src.exercice4;
+package fiche1.src.exercice4;
 
 public class Polynome2 extends Polynome {
     int a, b, c;

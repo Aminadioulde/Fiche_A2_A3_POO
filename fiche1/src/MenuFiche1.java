@@ -21,7 +21,7 @@ public class MenuFiche1 {
         while (continuer) {
             Utilitaires.clearScreen();
             System.out.println("\n╔══════════════════════════════════════════════════╗");
-            System.out.println("║                     FICHE 1(A2)                  ║");
+            System.out.println("║                     FICHE 1 (A2)                 ║");
             System.out.println("╠══════════════════════════════════════════════════╣");
             System.out.println("║  1. Listes chaînées                              ║");
             System.out.println("║  3. Grands entiers                               ║");
@@ -36,15 +36,19 @@ public class MenuFiche1 {
             switch (choix) {
                 case 1:
                     Exercice1.main(null);
-                    break;
-                case 2:
-                    Exercice3.main(null);
+                    Utilitaires.attendreEntree();
                     break;
                 case 3:
-                    Exercice4.main(null);
+                    Exercice3.main(null);
+                    Utilitaires.attendreEntree();
                     break;
                 case 4:
+                    Exercice4.main(null);
+                    Utilitaires.attendreEntree();
+                    break;
+                case 5:
                     new Exercice5().afficherEtTraiter();
+                    Utilitaires.attendreEntree();
                     break;
                 case 0:
                     continuer = false;
@@ -64,7 +68,7 @@ public class MenuFiche1 {
         while (continuer) {
             Utilitaires.clearScreen();
             System.out.println("\n╔══════════════════════════════════════════════════╗");
-            System.out.println("║                     FICHE 1(A2)                  ║");
+            System.out.println("║            TESTS STATIQUES - FICHE 1 (A2)        ║");
             System.out.println("╠══════════════════════════════════════════════════╣");
             System.out.println("║  1. Listes chaînées                              ║");
             System.out.println("║  3. Grands entiers                               ║");
@@ -78,23 +82,19 @@ public class MenuFiche1 {
 
             switch (choix) {
                 case 1:
-                    TestExercice1.tester();
+                    TestExercice1.main(null);
                     Utilitaires.attendreEntree();
                     break;
                 case 3:
-                    TestExercice3.tester();
+                    TestExercice3.main(null);
                     Utilitaires.attendreEntree();
                     break;
                 case 4:
-                    TestExercice4.tester();
+                    TestExercice4.main(null);
                     Utilitaires.attendreEntree();
                     break;
                 case 5:
-                    TestExercice5.tester();
-                    Utilitaires.attendreEntree();
-                    break;
-                case 6:
-                    executerTousLesTests();
+                    TestExercice5.main(null);
                     Utilitaires.attendreEntree();
                     break;
                 case 0:
@@ -107,23 +107,4 @@ public class MenuFiche1 {
         }
     }
 
-    /**
-     * Exécute tous les tests statiques pour les exercices de la fiche 2
-     */
-    private static void executerTousLesTests() {
-        Utilitaires.clearScreen();
-        System.out.println("\n╔══════════════════════════════════════════════════╗");
-        System.out.println("║           TOUS LES TESTS STATIQUES               ║");
-        System.out.println("╚══════════════════════════════════════════════════╝");
-        TestExercice1.tester();
-        TestExercice2.tester();
-        TestExercice3.tester();
-        TestExercice4.tester();
-        TestExercice5.tester();
-        TestExercice6.tester();
-        TestExercice7.tester();
-        TestExercice8.tester();
-
-        System.out.println("\n'Tous les tests statiques ont été exécutés.");
-    }
 }

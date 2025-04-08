@@ -1,4 +1,4 @@
-package fiche1.exercice1;
+package fiche1.src.exercice1;
 
 /**
  * Implémentation d'une liste chaînée de chaînes de caractères

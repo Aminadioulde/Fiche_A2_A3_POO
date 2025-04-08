@@ -89,7 +89,7 @@ public class Utilitaires {
                 System.out.print("Entrée invalide. Veuillez saisir un nombre : ");
             }
         }
-
+        ClearBuffer();
         return valeur;
     }
 
@@ -111,7 +111,7 @@ public class Utilitaires {
             }
             valide = true;
         }
-
+        ClearBuffer();
         return valeur;
     }
 
@@ -124,5 +124,9 @@ public class Utilitaires {
     public static void attendreEntree() {
         System.out.println("\nAppuyez sur Entrée pour continuer...");
         scanner.nextLine();
+    }
+
+    public static void ClearBuffer() {
+
     }
 }

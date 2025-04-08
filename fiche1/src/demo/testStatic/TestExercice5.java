@@ -3,7 +3,7 @@ package fiche1.src.demo.testStatic;
 import fiche1.src.exercice5.*;
 
 public class TestExercice5 {
-    public static void tester() {
+    public static void main(String[] args) {
         System.out.println("\n=== Test Statique Exercice 5 : Intervalles d'entiers ===");
 
         // Test des intervalles ouverts
