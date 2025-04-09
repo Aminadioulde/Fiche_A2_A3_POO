@@ -33,6 +33,7 @@ public class Exercice3 {
             switch (choix) {
                 case 1:
                     liste1 = ListeEntiers.creerListe();
+
                     System.out.println("Liste 1 créée.");
                     System.out.println("\nAppuyez sur Entrée pour continuer...");
                     scanner.nextLine();
@@ -42,11 +43,14 @@ public class Exercice3 {
                     System.out.println("Liste 2 créée.");
                     break;
                 case 3:
+                    System.out.println("Liste 1 : " + liste1);
                     if (liste1 != null) {
+
                         liste1.afficher();
                     } else {
                         System.out.println("La liste 1 n'a pas encore été créée.");
                     }
+                    Utilitaires.attendreEntree();
                     break;
                 case 4:
                     if (liste2 != null) {
@@ -54,6 +58,7 @@ public class Exercice3 {
                     } else {
                         System.out.println("La liste 2 n'a pas encore été créée.");
                     }
+                    Utilitaires.attendreEntree();
                     break;
                 case 5:
                     if (liste1 != null && liste2 != null) {
@@ -65,6 +70,7 @@ public class Exercice3 {
                     } else {
                         System.out.println("Les deux listes doivent être créées d'abord.");
                     }
+                    Utilitaires.attendreEntree();
                     break;
                 case 6:
                     if (liste1 != null && liste2 != null) {
@@ -74,6 +80,7 @@ public class Exercice3 {
                     } else {
                         System.out.println("Les deux listes doivent être créées d'abord.");
                     }
+                    Utilitaires.attendreEntree();
                     break;
                 case 7:
                     if (liste1 != null && liste2 != null) {
@@ -83,12 +90,13 @@ public class Exercice3 {
                     } else {
                         System.out.println("Les deux listes doivent être créées d'abord.");
                     }
+                    Utilitaires.attendreEntree();
                     break;
                 case 0:
                     continuer = false;
                     break;
                 default:
-                    System.out.println("Choix invalide. Veuillez réessayer.");
+                    System.out.println("Choix invalide. Veuillez réessayerf.");
                     System.out.println("\nAppuyez sur Entrée pour continuer...");
                     scanner.nextLine();
             }

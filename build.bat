@@ -1,6 +1,14 @@
 @echo off
 echo Compilation du projet...
 
+REM Nettoyage des anciens fichiers
+rmdir /s /q fiche1\bin 2>nul
+rmdir /s /q fiche2\bin 2>nul
+rmdir /s /q bin 2>nul
+rmdir /s /q doc 2>nul
+del /f /q manifest.txt 2>nul
+del /f /q projet.jar 2>nul
+
 REM Création des répertoires nécessaires
 mkdir fiche1\bin 2>nul
 mkdir fiche2\bin 2>nul
