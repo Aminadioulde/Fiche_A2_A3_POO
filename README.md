@@ -16,6 +16,15 @@
 
 ```
 Fiche_A2_A3_POO/
+├── fiche1/
+│   ├── src/
+│   │   ├── demo/           # Classes de démonstration
+│   │   │   └── testStatic/ # Tests statiques
+│   │   ├── exercice1/      # Listes chaînées et QuickSort
+│   │   ├── exercice3/      # Gestion de dates
+│   │   ├── exercice4/      # Gestion de points
+│   │   └── exercice5/      # Gestion de fractions
+│   └── bin/                # Fichiers compilés
 ├── fiche2/
 │   ├── src/
 │   │   ├── demo/           # Classes de démonstration
@@ -32,11 +41,11 @@ Fiche_A2_A3_POO/
 ├── utils/                  # Utilitaires communs
 ├── doc/                    # Documentation générée
 ├── bin/                    # Fichiers compilés principaux
-├── Main.java               # Point d'entrée du programme
-├── Menu.java               # Menu principal
-├── build.sh                # Script de build pour Unix
-├── build.bat               # Script de build pour Windows
-└── README.md               # Ce fichier
+├── Main.java              # Point d'entrée du programme
+├── Menu.java              # Menu principal
+├── build.sh               # Script de build pour Unix
+├── build.bat              # Script de build pour Windows
+└── README.md              # Ce fichier
 ```
 
 ## 💻 Prérequis
