@@ -21,19 +21,19 @@ public class TestExercice7 {
         System.out.println("\nFeuilles de l'arbre :");
         arbre.feuille();
         
-        System.out.println("\nDegrés des nœuds :");
+        System.out.println("\nDegrés des noeuds :");
         arbre.degre();
         
-        System.out.println("\nProfondeur du nœud 5 :");
+        System.out.println("\nProfondeur du noeud 5 :");
         arbre.profondeur(5);
         
-        System.out.println("\nProfondeur du nœud 12 :");
+        System.out.println("\nProfondeur du noeud 12 :");
         arbre.profondeur(12);
         
         System.out.println("\nHauteur de l'arbre :");
         arbre.hauteur();
         
-        System.out.println("\nSomme des nœuds :");
+        System.out.println("\nSomme des noeuds :");
         arbre.somNoeuds();
     }
 }
