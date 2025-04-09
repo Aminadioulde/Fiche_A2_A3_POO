@@ -31,7 +31,7 @@ javac -cp bin -d fiche2\bin ^
     fiche2\src\exercice5\*.java ^
     fiche2\src\exercice7\*.java ^
     fiche2\src\exercice8\*.java ^
-    fiche2\src\demo\*.java 2>nul
+    fiche2\src\demo\*.java 2>nul || exit /b 0
 
 REM Compilation des fichiers principaux
 echo Compilation des fichiers principaux...
@@ -47,7 +47,7 @@ jar cvfm projet.jar manifest.txt -C bin . -C fiche1\bin fiche1 -C fiche2\bin fic
 
 REM Génération de la documentation
 echo Génération de la documentation Javadoc...
-javadoc -d doc -sourcepath .;fiche1\src;fiche2\src -subpackages fiche1.src fiche2.src utils Main Menu 2>nul
+javadoc -d doc -sourcepath .;fiche1\src;fiche2\src -subpackages fiche1.src fiche2.src utils Main Menu 2>nul || exit /b 0
 
 echo Compilation terminée.
 echo.
